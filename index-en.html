@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dina Harbi - International Consultant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #233F60;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative; /* Added to contain absolute position elements */        
+	}
+        
+        .header-logo {
+            position: absolute;
+            top: 5px;
+            left: 50px;
+            height:148px; /* Adjust as needed */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f4f4f4;
+            padding: 10px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #233F60;
+       }
+
+        .language-buttons {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .language-buttons button {
+            background-color: #233F60;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            cursor: pointer;
+        }
+
+        
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            color: #233F60;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #f4f4f4;
+            color: #233F60;
+        
+        }
+        
+        .video-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: space-around;
+        }
+        
+        .video-card {
+            flex: 1 1 45%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+            background: #fff;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        
+        .video-card iframe {
+            width: 100%;
+            height: 250px;
+            border: none;
+        }
+        
+        .job-title {
+            color: #233F60;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+        
+        .work-experience {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+	<img src="logo.png" alt="Logo" class="header-logo"> <!-- Add this line for the logo -->
+        <h1>Dina Harbi</h1>
+        <p>INTERNATIONAL CONSULTANT & BILINGUAL CONTENT SPECIALIST</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Work Experience</a>
+        <a href="#skills">Technical Skills</a>
+        <a href="#languages">Languages</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+	<div class="language-buttons">
+            <button id="btn-en">English</button>
+            <button id="btn-fr" class="active">Français</button>
+        </div>
+    <div class="container">
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <p>Energetic bilingual professional (French/English) with extensive experience in eLearning, LMS platforms, web content creation, and global expansion strategies. Proven track record in translation, editing, and multimedia content production. Skilled in project management, international market penetration, and team leadership.</p>              
+        </section>
+	<section id="education" class="card">
+            <h2>Education</h2>
+            <div>
+                <h3>CUNY Baruch College, New York, NY</h3>
+                <p>International Marketing - Education (1989 - 1992)</p>
+            </div>
+            <div>
+                <h3>SUNY Stony Brook, New York, NY</h3>
+                <p>Liberal Arts - Education (1988 - 1989)</p>
+            </div>
+        </section>
+        <section id="experience" class="card">
+            <h2>Work Experience</h2>
+            <div class="work-experience">
+                <h3>Mandarine Academy, Lille, France</h3>
+                <p class="job-title">International Consultant (2018 - Present)</p>
+                <ul>
+                    <li>Led translation and production of e-learning content, contributing to global market expansion</li>
+                    <li>Implemented strategies for international market penetration and user engagement</li>
+                    <li>Managed multimedia content creation, including video tutorials and voice-overs, tailored for a diverse global audience</li>
+                </ul>
+            </div>
+            <div class="work-experience">
+                <h3>Freelance, Lille, France</h3>
+                <p class="job-title">Translator & Content Writer (2015 - 2017)</p>
+                <ul>
+                    <li>Provided translation and content writing services for web content, specializing in SEO-optimized e-learning materials</li>
+                </ul>
+            </div>
+            <div class="work-experience">
+                <h3>Agora Hôtel, Lille, France</h3>
+                <p class="job-title">Office Manager (2010 - 2015)</p>
+                <ul>
+                    <li>Supervised customer service, billing, and staff, focusing on efficiency and international client relations</li>
+                </ul>
+            </div>
+            <div class="work-experience">
+                <h3>The Trustforte Corporation, New York</h3>
+                <p class="job-title">Office Manager (2007 - 2010)</p>
+                <ul>
+                    <li>Managed purchasing, organization, and technical translations, streamlining operational processes</li>
+                </ul>
+            </div>
+            <div class="work-experience">
+                <h3>NYU School of Medicine, New York</h3>
+                <p class="job-title">Administrative Support, Accounting (2006 - 2007)</p>
+                <ul>
+                    <li>Handled accounting and budgeting for scholarships and grants</li>
+                </ul>
+            </div>
+            <div class="work-experience">
+                <h3>Bisys Private Equity Services, New York</h3>
+                <p class="job-title">Administrative Support, Accounting (2004 - 2005)</p>
+                <ul>
+                    <li>Provided accounting and administrative support, enhancing financial operations</li>
+                </ul>
+            </div>
+            <div class="work-experience">
+                <h3>Louis Vuitton North America, New York</h3>
+                <p class="job-title">Accounts Payable Manager (2003 - 2004)</p>
+                <ul>
+                    <li>Managed accounts payable, contributing to effective financial management</li>
+                </ul>
+            </div>
+            <div class="work-experience">
+                <h3>Various Temp Assignments, New York</h3>
+                <p class="job-title">Executive Assistant and Accounting (2001 - 2003)</p>
+                <ul>
+                    <li>Performed various executive assistant and accounting roles across different sectors</li>
+                </ul>
+            </div>
+            <div class="work-experience">
+                <h3>Antigenics Inc, New York</h3>
+                <p class="job-title">Office Manager / Facility Manager (1999 - 2001)</p>
+                <ul>
+                    <li>Managed office operations, including executive assistance, purchasing, and accounting</li>
+                </ul>
+            </div>
+            <div class="work-experience">
+                <h3>Parfums Givenchy, Inc, New York</h3>
+                <p class="job-title">Senior Accounts Payable Manager (1994 - 1998)</p>
+                <ul>
+                    <li>Led the accounts payable team, focusing on training and account management</li>
+                </ul>
+            </div>
+        </section>
+        <section id="skills" class="card">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Operating Systems: AS/400, Windows XP, 7, VISTA, 10, 11</li>
+                <li>Software: Word, Excel, PowerPoint, Outlook, Access, OneNote, Advent Partner, Sungard InvesTier, Brio, Hyperion, PARM, Odoo, JIRA, WordPress, HubSpot, Lusha, Lemlist</li>
+            </ul>
+	     </section>
+        <section id="languages" class="card">
+            <h2>Languages</h2>
+            <ul>                
+                <li>Fluent in French and English</li>
+                <li>Proficient in Spanish</li>
+                <li>Basic in Italian</li>                
+            </ul>
+        </section>
+         <section id="portfolio" class="card">
+            <h2>Portfolio</h2>
+            <div class="video-wrapper">
+                <div class="video-card">
+                    <h3>Collaborate with OneDrive</h3>
+                    <iframe src="https://www.youtube.com/embed/kNdvVFvwgC4" allowfullscreen></iframe>
+                </div>
+                <div class="video-card">
+                    <h3>Enhance Tasks</h3>
+                    <iframe src="https://www.youtube.com/embed/Jfert1avZ_A" allowfullscreen></iframe>
+                </div>
+                <div class="video-card">
+                    <h3>Sophie Dancing to New York, New York</h3>
+                    <iframe src="https://www.youtube.com/embed/5_zBvzs7yUY" allowfullscreen></iframe>
+                </div>
+                <div class="video-card">
+                    <h3>Naya Dancing to Rock Around the Clock</h3>
+                    <iframe src="https://www.youtube.com/embed/E75sAdBurVY" allowfullscreen></iframe>
+                </div>
+                <div class="video-card">
+                    <h3>Alya Dancing to Frank Sinatra</h3>
+                    <iframe src="https://www.youtube.com/embed/riSJ1cAEKC8" allowfullscreen></iframe>
+                </div>
+                <div class="video-card">
+                    <h3>Elissa Dancing to The Itsy Bitsy</h3>
+                    <iframe src="https://drive.google.com/file/d/1rGbkXWO5mBp7QgB2WvVp80PlWSeWjt9Q/preview" allowfullscreen></iframe>
+                </div>  
+	    </ul>         
+    	</section>
+          <section id="contact" class="card">
+            <h2>Contact</h2>     
+            <p><strong>Address:</strong> 630 avenue de la République, 59800 LILLE<br>
+            <strong>Tel:</strong> +33 6 32 91 60 97<br>
+            <strong>Email:</strong> <a href="mailto:dinaharbi@yahoo.com">dinaharbi@yahoo.com</a><br>
+	    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dina-harbi-0423ab1b" target="_blank">linkedin.com/in/dina-harbi</a></p>
+        </section>
+    </div>
+	<footer>
+        <p>&copy; 2024 Dina Harbi. All rights reserved.</p>
+    </footer>
+    <audio id="background-music" autoplay loop>
+        <source src="background-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+ <script>
+        function switchLanguage(language) {
+            if (language === 'fr') {
+                window.location.href = 'index-fr.html';
+            } else {
+                window.location.href = 'index-en.html';
+            }
+        }
+        document.getElementById('btn-fr').addEventListener('click', () => switchLanguage('fr'));
+        document.getElementById('btn-en').addEventListener('click', () => switchLanguage('en'));
+    </script>
+</body>
+</html>
