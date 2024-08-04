@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dina Harbi - International Consultant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,14 +16,14 @@
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: relative; /* Added to contain absolute position elements */        
-	}
+            position: relative;        
+        }
         
         .header-logo {
             position: absolute;
             top: 5px;
             left: 50px;
-            height:148px; /* Adjust as needed */
+            height: 148px;
         }
 
         nav {
@@ -36,7 +37,7 @@
             margin: 0 15px;
             text-decoration: none;
             color: #233F60;
-       }
+        }
 
         .language-buttons {
             display: flex;
@@ -51,7 +52,7 @@
             padding: 0.5rem 1rem;
             margin: 0 0.5rem;
             cursor: pointer;
-       }
+        }
 
         .volume-control {
             display: inline-block;
@@ -61,14 +62,15 @@
 
         .volume-control input[type="range"] {
             vertical-align: middle;
-	    color: #233F60;
+            color: #233F60;
         }
 
-        
         .container {
             max-width: 1000px;
             margin: 20px auto;
             padding: 0 20px;
+	    position: relative; /* Add this to position the button relative to the container */
+
         }
 
         .card {
@@ -88,7 +90,6 @@
             padding: 1rem 0;
             background: #f4f4f4;
             color: #233F60;
-        
         }
         
         .video-wrapper {
@@ -122,11 +123,35 @@
         .work-experience {
             margin-bottom: 2rem;
         }
+       #back-to-top {
+           position: fixed; /* Make the button float */
+           right: 180px; /* Distance from the right edge of the page */
+           top: 50%; /* Center the button vertically */
+           transform: translateY(-50%); /* Adjust to truly center the button vertically */
+           z-index: 99; /* Ensure visibility above other elements */
+           border: none; /* Remove borders */
+           outline: none; /* Remove outline */
+           background-color: #233F60; /* Background color */
+           color: white; /* Text color */
+           cursor: pointer; /* Pointer on hover */
+           padding: 15px; /* Padding for the button */
+           border-radius: 10px; /* Rounded corners */
+           font-size: 24px; /* Font size for the icon */
+           width: 50px; /* Fixed width */
+           height: 50px; /* Fixed height */
+           display: flex; /* Flexbox layout */
+           align-items: center; /* Center icon vertically */
+           justify-content: center; /* Center icon horizontally */
+       }
+
+       #back-to-top:hover {
+           background-color: #555; /* Dark grey background on hover */
+       }
     </style>
 </head>
 <body>
     <header>
-	<img src="logo.png" alt="Logo" class="header-logo"> <!-- Add this line for the logo -->
+        <img src="logo.png" alt="Logo" class="header-logo">
         <h1>Dina HARBI</h1>
         <p>INTERNATIONAL CONSULTANT & BILINGUAL CONTENT SPECIALIST</p>
     </header>
@@ -139,10 +164,10 @@
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
     </nav>
-	<div class="language-buttons">
-            <button id="btn-en">English</button>
-            <button id="btn-fr" class="active">Français</button>
-	<div class="volume-control">
+    <div class="language-buttons">
+        <button id="btn-en">English</button>
+        <button id="btn-fr" class="active">Français</button>
+        <div class="volume-control">
             <label for="volume">Volume:</label>
             <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
         </div>
@@ -150,9 +175,9 @@
     <div class="container">
         <section id="about" class="card">
             <h2>About Me</h2>
-            <p>Energetic bilingual professional (French/English) with extensive experience in eLearning, LMS platforms, web content creation, and global expansion strategies. Proven track record in translation, editing, and multimedia content production. Skilled in project management, international market penetration, and team leadership.</p>              
+            <p>Energetic bilingual professional (French/English) with extensive experience in eLearning, LMS platforms, web content creation, and global expansion strategies. Proven track record in translation, editing, and multimedia content production. Skilled in project management, international market penetration, and team leadership.</p>
         </section>
-	<section id="education" class="card">
+        <section id="education" class="card">
             <h2>Education</h2>
             <div>
                 <h3>CUNY Baruch College, New York, NY</h3>
@@ -203,7 +228,7 @@
                 </ul>
             </div>
             <div class="work-experience">
-                <h3>Bisys Private Equity Services, New York</h3>
+                <h3>Bisys Private Equity Services, New York</h>
                 <p class="job-title">Administrative Support, Accounting (2004 - 2005)</p>
                 <ul>
                     <li>Provided accounting and administrative support, enhancing financial operations</li>
@@ -244,16 +269,16 @@
                 <li>Operating Systems: AS/400, Windows XP, 7, VISTA, 10, 11</li>
                 <li>Software: Word, Excel, PowerPoint, Outlook, Access, OneNote, Advent Partner, Sungard InvesTier, Brio, Hyperion, PARM, Odoo, JIRA, WordPress, HubSpot, Lusha, Lemlist</li>
             </ul>
-	     </section>
+        </section>
         <section id="languages" class="card">
             <h2>Languages</h2>
-            <ul>                
+            <ul>
                 <li>Fluent in French and English</li>
                 <li>Proficient in Spanish</li>
-                <li>Basic in Italian</li>                
+                <li>Basic in Italian</li>
             </ul>
         </section>
-         <section id="portfolio" class="card">
+        <section id="portfolio" class="card">
             <h2>Portfolio</h2>
             <div class="video-wrapper">
                 <div class="video-card">
@@ -276,37 +301,40 @@
                     <h3>05--Supprimer une tâche, un compartiment ou un plan dans Microsoft Planner</h3>
                     <iframe src="https://www.youtube.com/embed/ORMxE0n5hKY" allowfullscreen></iframe>
                 </div>
-		<div class="video-card">
+                <div class="video-card">
                     <h3>06--How to Search in the Outlook Web App</h3>
                     <iframe src="https://www.youtube.com/embed/l_XTCaxk2jY" allowfullscreen></iframe>
                 </div>
-		<div class="video-card">
+                <div class="video-card">
                     <h3>07--Select Multiple Emails in the Outlook Web App</h3>
                     <iframe src="https://www.youtube.com/embed/hL3yIsRKkao" allowfullscreen></iframe>
                 </div>
-		<div class="video-card">
+                <div class="video-card">
                     <h3>08--Creating and Managing Folders in the Outlook Web App</h3>
                     <iframe src="https://www.youtube.com/embed/WYDd3Obx0VM" allowfullscreen></iframe>
                 </div>
-		<div class="video-card">
+                <div class="video-card">
                     <h3>09--Create Quick Accesses and Favorites in the Outlook Web App</h3>
                     <iframe src="https://www.youtube.com/embed/SCDXQhpmRZ4" allowfullscreen></iframe>
                 </div>
-		<div class="video-card">
+                <div class="video-card">
                     <h3>10--Out-of-Office Messages and Automatic Replies in the Outlook Web App</h3>
                     <iframe src="https://www.youtube.com/embed/zbf-b-mnksw" allowfullscreen></iframe>
-                </div>               
-	    </ul>     
-    	</section>
-          <section id="contact" class="card">
-            <h2>Contact</h2>     
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="card">
+            <h2>Contact</h2>
             <p><strong>Address:</strong> 630 avenue de la République, 59800 LILLE<br>
             <strong>Tel:</strong> +33 6 32 91 60 97<br>
             <strong>Email:</strong> <a href="mailto:dinaharbi@yahoo.com">dinaharbi@yahoo.com</a><br>
-	    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dina-harbi-0423ab1b" target="_blank">linkedin.com/in/dina-harbi</a></p>
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dina-harbi-0423ab1b" target="_blank">linkedin.com/in/dina-harbi</a></p>
         </section>
+        <button id="back-to-top" title="Go to top">
+            <i class="fas fa-home"></i>
+        </button>
     </div>
-	<footer>
+    <footer>
         <p>&copy; 2024 Dina Harbi. All rights reserved.</p>
     </footer>
     <audio id="background-music" autoplay loop>
@@ -334,6 +362,24 @@
 
         // Set initial volume
         audio.volume = volumeControl.value;
+
+        // Back-to-top button functionality
+        var mybutton = document.getElementById("back-to-top");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        mybutton.onclick = function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
 </body>
 </html>
