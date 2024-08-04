@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dina Harbi - Consultante Internationale</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -65,13 +66,12 @@
             vertical-align: middle;
 	    color: #FF6F61;
         }
-
-
         
         .container {
             max-width: 1000px;
             margin: 20px auto;
             padding: 0 20px;
+	    position: relative; /* Add this to position the button relative to the container */
         }
 
         .card {
@@ -124,6 +124,30 @@
         .work-experience {
             margin-bottom: 2rem;
         }
+       #back-to-top {
+           position: fixed; /* Make the button float */
+           right: 180px; /* Distance from the right edge of the page */
+           top: 50%; /* Center the button vertically */
+           transform: translateY(-50%); /* Adjust to truly center the button vertically */
+           z-index: 99; /* Ensure visibility above other elements */
+           border: none; /* Remove borders */
+           outline: none; /* Remove outline */
+           background-color: #FF6F61; /* Background color */
+           color: white; /* Text color */
+           cursor: pointer; /* Pointer on hover */
+           padding: 15px; /* Padding for the button */
+           border-radius: 10px; /* Rounded corners */
+           font-size: 24px; /* Font size for the icon */
+           width: 50px; /* Fixed width */
+           height: 50px; /* Fixed height */
+           display: flex; /* Flexbox layout */
+           align-items: center; /* Center icon vertically */
+           justify-content: center; /* Center icon horizontally */
+       }
+
+       #back-to-top:hover {
+           background-color: #555; /* Dark grey background on hover */
+       }
     </style>
 </head>
 <body>
@@ -307,6 +331,9 @@
             <strong>Email :</strong> <a href="mailto:dinaharbi@yahoo.com">dinaharbi@yahoo.com</a><br>
             <strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/dina-harbi-0423ab1b" target="_blank">linkedin.com/in/dina-harbi</a></p>
         </section>
+        <button id="back-to-top" title="Go to top">
+            <i class="fas fa-home"></i>
+        </button>
     </div>
     <footer>
         <p>&copy; 2024 Dina Harbi. Tous droits réservés.</p>
@@ -336,7 +363,24 @@
 
         // Set initial volume
         audio.volume = volumeControl.value;
-    </script>
 
+       // Back-to-top button functionality
+        var mybutton = document.getElementById("back-to-top");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        mybutton.onclick = function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 </html>
