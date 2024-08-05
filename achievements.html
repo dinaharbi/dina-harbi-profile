@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dina Harbi - Réalisations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #FF6F61;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        .header-logo {
+            position: absolute;
+            top: 10px;
+            left: 50px;
+            height: 120px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f4f4f4;
+            padding: 15px 0;
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #FF6F61;
+            font-weight: bold;
+        }
+
+        .header-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .language-buttons {
+            display: flex;
+            margin-right: 20px;
+        }
+
+        .language-buttons button {
+            background-color: #FF6F61;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .volume-control {
+            display: flex;
+            align-items: center;
+            color: #FF6F61;
+        }
+
+        .volume-control label {
+            margin-right: 10px;
+        }
+
+        .volume-control input[type="range"] {
+            vertical-align: middle;
+            accent-color: #FF6F61;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sub-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: #FF6F61;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        h4 {
+            color: #FF6F61;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #f4f4f4;
+            color: #FF6F61;
+            margin-top: 40px;
+        }
+
+        #back-to-top {
+            position: fixed;
+            right: 180px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #FF6F61;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 24px;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #back-to-top:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="logo.png" alt="Dina Harbi Logo" class="header-logo">
+    </a>
+    <h1>Dina HARBI</h1>
+    <p>CONSULTANTE INTERNATIONALE & SPÉCIALISTE DE CONTENU BILINGUE</p>     
+</header>
+    <nav>
+        <a href="achievements.html">Réalisations</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html">Profil</a>
+    </nav>
+    <div class="header-controls">
+        <div class="language-buttons">
+            <button id="btn-en">English</button>
+            <button id="btn-fr" class="active">Français</button>
+        </div>
+        <div class="volume-control">
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+        </div>
+    </div>
+    <div class="container">
+        <section id="achievements" class="card">
+            <h2>Réalisations</h2>
+            <p>
+               Avec plus de vingt ans d'expérience diversifiée, j'ai eu le privilège d'évoluer dans des domaines aussi variés que la Finance, la Biotechnologie, l'Hôtellerie et le Digital. Mon parcours professionnel m'a menée des États-Unis jusqu'en France, où j'ai su relever avec succès les défis des environnements internationaux. Ce voyage témoigne non seulement de mes compétences, mais également de mon engagement à offrir l'excellence dans chacun de mes projets. Voici quelques-unes des réalisations marquantes de ma carrière.
+            </p>
+            <div class="sub-card">
+                <h4>Parfums Givenchy, Inc.</h4>
+                <p>
+                    J'ai brillamment réorganisé un système de paie et de paiement des fournisseurs complexe en mettant à niveau l'AS400, en seulement deux mois. Cette transformation a rationalisé les opérations et a entraîné une augmentation de <strong>60 % des ventes au détail</strong>, mettant en lumière l'importance de l'efficacité financière pour atteindre le succès commercial.
+                </p>
+            </div>
+            <div class="sub-card">
+                <h4>Antigenics Inc.</h4>
+                <p>
+                    J'ai piloté une refonte complète en rénovant trois étages de notre siège social. Cette initiative a été menée à bien avec un budget inférieur de <strong>50 % aux prévisions</strong> et a permis d'accueillir 40 nouveaux employés. Ce projet a démontré mes compétences exceptionnelles en gestion du temps et des ressources.
+                </p>
+            </div>
+            <div class="sub-card">
+                <h4>Mandarine Academy</h4>
+                <p>
+                    En tant que Consultante Digitale, j'ai dispensé plus de <strong>1 000 formations et webinaires en ligne</strong>, rendant les outils Microsoft 365 accessibles à un public mondial. Mon travail de traduction et de production de contenu e-learning a été essentiel à notre expansion sur le marché international, créant des supports numériques engageants qui résonnent avec des audiences diverses.
+                </p>
+            </div>
+            <p>
+                Mon expertise couvre la transformation digitale et la formation, où je jongle adroitement entre plusieurs rôles pour garantir le succès de chaque projet. Ma passion pour l'innovation et la croissance digitale nourrit mon travail, veillant à ce que chaque avancée soit à la fois significative et impactante. Si vous êtes à la recherche d'une professionnelle alliant expertise, créativité et une touche d'humour, je serais enchantée de collaborer avec vous. Ensemble, explorons comment donner vie aux idées de manière innovante, étape par étape.
+            </p>
+        </section>
+    </div>
+    <button id="back-to-top" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+    <footer>
+        <p>&copy; 2024 Dina Harbi. All rights reserved.</p>
+    </footer>
+    <audio id="background-music" autoplay loop>
+        <source src="background-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        // Function to switch languages
+        function switchLanguage(language) {
+            if (language === 'en') {
+                window.location.href = 'achievements-en.html';
+            } else {
+                window.location.href = 'achievements.html';
+            }
+        }
+
+        // Event listeners for language buttons
+        document.getElementById('btn-en').addEventListener('click', () => switchLanguage('en'));
+        document.getElementById('btn-fr').addEventListener('click', () => switchLanguage('fr'));
+
+        // Volume control
+        const volumeControl = document.getElementById('volume');
+        const audio = document.getElementById('background-music');
+        audio.volume = volumeControl.value;
+
+        volumeControl.addEventListener('input', function() {
+            audio.volume = this.value;
+        });
+
+        // Back-to-top button
+        var backToTopButton = document.getElementById("back-to-top");
+
+        window.onscroll = function() { scrollFunction(); };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        }
+
+        backToTopButton.addEventListener('click', function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+</body>
+</html>
