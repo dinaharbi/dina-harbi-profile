@@ -42,10 +42,16 @@ nav a {
     font-weight: bold;
 }
 
-.language-buttons {
+.header-controls {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 20px 0;
+}
+
+.language-buttons {
+    display: flex;
+    margin-right: 20px; /* Adjust as needed */
 }
 
 .language-buttons button {
@@ -59,14 +65,18 @@ nav a {
 }
 
 .volume-control {
-    display: inline-block;
-    margin-left: 20px;
+    display: flex;
+    align-items: center;
     color: #233F60;
+}
+
+.volume-control label {
+    margin-right: 10px; /* Adjust as needed */
 }
 
 .volume-control input[type="range"] {
     vertical-align: middle;
-    color: #233F60;
+    accent-color: #233F60;
 }
 
 .container {
@@ -159,7 +169,7 @@ footer {
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo" class="header-logo">
+        <img src="logo.png" alt="Dina Harbi Logo" class="header-logo">
         <h1>Dina HARBI</h1>
         <p>INTERNATIONAL CONSULTANT & BILINGUAL CONTENT SPECIALIST</p>
     </header>
@@ -172,9 +182,11 @@ footer {
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
     </nav>
-    <div class="language-buttons">
-        <button id="btn-en">English</button>
-        <button id="btn-fr" class="active">Français</button>
+    <div class="header-controls">
+        <div class="language-buttons">
+            <button id="btn-en">English</button>
+            <button id="btn-fr" class="active">Français</button>
+        </div>
         <div class="volume-control">
             <label for="volume">Volume:</label>
             <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
@@ -369,8 +381,6 @@ footer {
         });
 
         // Set initial volume
-        audio.volume = volumeControl.value;
-// Set initial volume
         audio.volume = volumeControl.value;
         
         // Back-to-top button functionality
