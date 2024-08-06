@@ -143,29 +143,29 @@ footer {
 }
 
 #back-to-top {
-           position: fixed; /* Make the button float */
-           right: 180px; /* Distance from the right edge of the page */
-           top: 50%; /* Center the button vertically */
-           transform: translateY(-50%); /* Adjust to truly center the button vertically */
-           z-index: 99; /* Ensure visibility above other elements */
-           border: none; /* Remove borders */
-           outline: none; /* Remove outline */
-           background-color: #233F60; /* Background color */
-           color: white; /* Text color */
-           cursor: pointer; /* Pointer on hover */
-           padding: 15px; /* Padding for the button */
-           border-radius: 10px; /* Rounded corners */
-           font-size: 24px; /* Font size for the icon */
-           width: 50px; /* Fixed width */
-           height: 50px; /* Fixed height */
-           display: flex; /* Flexbox layout */
-           align-items: center; /* Center icon vertically */
-           justify-content: center; /* Center icon horizontally */
-       }
+            position: fixed;
+            right: 180px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #233F60;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 24px;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-       #back-to-top:hover {
-           background-color: #555; /* Dark grey background on hover */
-       }
+        #back-to-top:hover {
+            background-color: #555;
+        }
     </style>
 </head>
 <body>
@@ -174,16 +174,16 @@ footer {
         <h1>Dina HARBI</h1>
         <p>INTERNATIONAL CONSULTANT & BILINGUAL CONTENT SPECIALIST</p>
     </header>
-<nav>
-    <a href="#about">About Me</a>
-    <a href="achievements-en.html">Achievements</a> <!-- Link updated to point to achievements-en.html -->
-    <a href="#education">Education</a>
-    <a href="#experience">Work Experience</a>
-    <a href="#skills">Technical Skills</a>
-    <a href="#languages">Languages</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="achievements-en.html">Achievements</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Work Experience</a>
+        <a href="#skills">Technical Skills</a>
+        <a href="#languages">Languages</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
     <div class="header-controls">
         <div class="language-buttons">
             <button id="btn-en">English</button>
@@ -352,10 +352,8 @@ footer {
             <strong>Email:</strong> <a href="mailto:dinaharbi@yahoo.com">dinaharbi@yahoo.com</a><br>
             <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dina-harbi-0423ab1b" target="_blank">linkedin.com/in/dina-harbi</a></p>
         </section>
-      <button id="back-to-top" title="Go to top">
-            <i class="fas fa-home"></i>
-        </button>
     </div>
+	<button id="back-to-top" title="Back to top"><i class="fas fa-arrow-up"></i></button>
     <footer>
         <p>&copy; 2024 Dina Harbi. All rights reserved.</p>
     </footer>
@@ -385,23 +383,23 @@ footer {
         // Set initial volume
         audio.volume = volumeControl.value;
         
-        // Back-to-top button functionality
-        var mybutton = document.getElementById("back-to-top");
+         // Back-to-top button
+        var backToTopButton = document.getElementById("back-to-top");
 
-        window.onscroll = function() {scrollFunction()};
+        window.onscroll = function() { scrollFunction(); };
 
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
+                backToTopButton.style.display = "block";
             } else {
-                mybutton.style.display = "none";
+                backToTopButton.style.display = "none";
             }
         }
 
-        mybutton.onclick = function() {
+        backToTopButton.addEventListener('click', function() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
-        }
+        });
     </script>
 </body>
 </html>
