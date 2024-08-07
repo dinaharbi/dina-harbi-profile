@@ -223,8 +223,10 @@
         document.getElementById('btn-en').addEventListener('click', () => switchLanguage('en'));
 
         // Volume control
-        const audio = new Audio('background-music.mp3');
         const volumeControl = document.getElementById('volume');
+        const audio = document.getElementById('background-music');
+        audio.volume = volumeControl.value;
+
         volumeControl.addEventListener('input', function() {
             audio.volume = this.value;
         });
