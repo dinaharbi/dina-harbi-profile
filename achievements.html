@@ -104,13 +104,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
         }
 
-        h2 {
-            color: #FF6F61;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-        }
-
-        h4 {
+        h2, h4 {
             color: #FF6F61;
             border-bottom: 2px solid #ddd;
             padding-bottom: 10px;
@@ -160,7 +154,7 @@
 </header>
     <nav>
         <a href="index.html#apropos">À Propos de Moi</a>
-	<a href="index.html#achievements.html">Réalisations</a>
+        <a href="achievements.html#achievements">Réalisations</a> <!-- Link updated to point to achievements.html -->
         <a href="index.html#formation">Formation</a>
         <a href="index.html#experiences">Expériences Professionnelles</a>
         <a href="index.html#informatique">Informatique</a>
@@ -168,6 +162,7 @@
         <a href="index.html#portfolio">Portfolio</a>
         <a href="index.html#contact">Contact</a>
     </nav>
+
     <div class="header-controls">
         <div class="language-buttons">
             <button id="btn-en">English</button>
@@ -209,25 +204,23 @@
     </div>
     <button id="back-to-top" title="Back to top"><i class="fas fa-arrow-up"></i></button>
     <footer>
-        <p>&copy; 2024 Dina Harbi. All rights reserved.</p>
+        <p>&copy; 2024 Dina Harbi. Tous droits réservés.</p>
     </footer>
     <audio id="background-music" autoplay loop>
         <source src="background-music.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
     <script>
-        // Function to switch languages
         function switchLanguage(language) {
-            if (language === 'en') {
-                window.location.href = 'achievements-en.html';
-            } else {
+            if (language === 'fr') {
                 window.location.href = 'achievements.html';
+            } else {
+                window.location.href = 'achievements-en.html';
             }
         }
-
-        // Event listeners for language buttons
-        document.getElementById('btn-en').addEventListener('click', () => switchLanguage('en'));
+        
         document.getElementById('btn-fr').addEventListener('click', () => switchLanguage('fr'));
+        document.getElementById('btn-en').addEventListener('click', () => switchLanguage('en'));
 
         // Volume control
         const volumeControl = document.getElementById('volume');
@@ -244,7 +237,7 @@
         window.onscroll = function() { scrollFunction(); };
 
         function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
                 backToTopButton.style.display = "block";
             } else {
                 backToTopButton.style.display = "none";
